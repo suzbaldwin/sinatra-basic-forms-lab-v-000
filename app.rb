@@ -1,13 +1,13 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  
+
   get '/' do
     "Click Here To List A Puppy"
     erb :index
-    
+
   end
-  
+
   get '/welcome' do
     "Click Here To List A Puppy"
     erb :index
@@ -20,7 +20,7 @@ class App < Sinatra::Base
     @breed = "Puppy Breed: #{params[:breed]}"
     @age = "Puppy Age: #{params[:age]}"
     erb :display_puppy
-    
+
   end
-  
+
 end
